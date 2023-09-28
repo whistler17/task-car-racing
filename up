@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker run --detach \
+     --name test-task-nikolaev \
+     --restart unless-stopped \
+     --volume $(pwd):/var/www/html \
+     --user nobody:nobody \
+     --publish 8080:80 \
+     trafex/php-nginx
+
+composer install
