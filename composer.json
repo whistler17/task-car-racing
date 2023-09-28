@@ -1,0 +1,18 @@
+{
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "illuminate/collections": "^10.25"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^6.3",
+        "laravel/pint": "^1.12"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App",
+            "Domain\\": "src/Domain",
+            "Support\\": "src/Support"
+        }
+    }
+}
